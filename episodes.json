@@ -1,20 +1,14 @@
 [
   {
-    "date": "20260525015800",
+    "date": "202605250158",
     "title": "AIとWebの最前線 デイリーニュースキャスト",
-    "audioPath": "episodes/20260525015800/audio.mp3",
-    "scriptPath": "episodes/20260525015800/script.md"
+    "audioPath": "episodes/202605250158/podcast_script.mp3",
+    "scriptPath": "episodes/202605250158/podcast_script.md"
   },
   {
-    "date": "20260525014700",
+    "date": "202605250147",
     "title": "AIとWebの最前線 デイリーニュースキャスト",
-    "audioPath": "episodes/20260525014700/audio.mp3",
-    "scriptPath": "episodes/20260525014700/script.md"
-  },
-  {
-    "date": "20260523100000",
-    "title": "AIとWebの最新デイリーニュースキャスト",
-    "audioPath": "episodes/20260523100000/audio.mp3",
-    "scriptPath": "episodes/20260523100000/script.md"
+    "audioPath": "episodes/202605250147/podcast_script.mp3",
+    "scriptPath": "episodes/202605250147/podcast_script.md"
   }
 ]
