@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月2日（月）",
+  "subTheme": "セキュリティ",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "GitHub Copilot Fusionが一般提供に",
+      "points": [
+        "タスクごとにAIモデルの選択と組み合わせを自動化",
+        "Single／Cascade／Critiqueの3つの実行パターン",
+        "全Copilotプランが対象。VS Code・JetBrains・CLIで利用可"
+      ],
+      "keyFigure": { "value": "3段階", "label": "努力レベル Standard / High / Max" },
+      "takeaway": "追加料金はなく使われたモデルの従量課金。High/Maxは消費増に注意",
+      "source": "GitHub Universe 2026、gihyo.jp",
+      "published": "2026年10月28日"
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Next.jsがバンドル削減スキル「next-bundle-optimizer」を公開",
+      "points": [
+        "AIエージェントがTurbopackのモジュールグラフを解析",
+        "lazy()したつもりが静的importで先読みされる箇所を検出",
+        "既定はレポートのみ。fix指定で修正と再計測まで実行"
+      ],
+      "keyFigure": { "value": "約2MB", "label": "v0とvercel.comで削減（圧縮後）" },
+      "takeaway": "Next.js 16.4以降・Turbopackが前提。next analyzeも強化",
+      "source": "Next.js公式ブログ",
+      "published": "2026年10月28日"
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "RustのZIPライブラリ「zip（zip2）」にCVSS 10.0の脆弱性",
+      "points": [
+        "検査と展開で別々のファイル名ヘッダーを読むパーサー不一致",
+        "無害に見えるZIPで任意ファイル上書き、RCEのおそれ",
+        "9.0.4までの全バージョンが影響"
+      ],
+      "keyFigure": { "value": "CVSS 10.0", "label": "CVE-2026-115905" },
+      "takeaway": "9.0.5へ更新し、enforce_header_consistencyを有効化する",
+      "source": "Wiz Vulnerability Database",
+      "published": "2026年10月26日"
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "Ivanti Connect Secureで悪用中のゼロデイ2件を追加修正",
+      "points": [
+        "権限昇格と、認証済み攻撃者によるファイルアップロード",
+        "10月の認証バイパスと連鎖し、パッチ済み機器でもroot実行",
+        "攻撃者はログ改ざんでIntegrity Checkerを回避"
+      ],
+      "keyFigure": { "value": "5,000台超", "label": "インターネット公開中のICS（Shadowserver）" },
+      "takeaway": "Ivantiのアドバイザリで修正版を確認し、侵害痕跡も調べる",
+      "source": "BleepingComputer",
+      "published": "2026年11月2日"
+    }
+  ],
+  "summary": {
+    "points": [
+      "Copilot Fusion GA：モデル選びをCopilotに任せる時代へ",
+      "next-bundle-optimizer：遅延読み込みの抜け穴をエージェントが発見",
+      "zip2：9.0.5へ更新し整合性チェックを有効化",
+      "Ivanti ICS：早急なパッチ適用と侵害痕跡の確認を"
+    ],
+    "closing": "AIに任せる範囲が広がるほど、依存ライブラリや機器の更新という足元の管理が重要になります。"
+  }
+}
