@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月8日（日）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Google、動画生成モデル「Gemini Omni 1.2 Flash」を一般提供",
+      "points": [],
+      "published": "2026年11月5日",
+      "source": "Google Blog、Google Cloud Blog、The Decoder",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Googleが動画の生成・編集に特化した Gemini Omni 1.2 Flash を発表し、11月6日に Google Cloudで一般提供（GA） を開始しました。",
+          "keyFigure": {
+            "value": "最大15秒",
+            "label": "生成できる長さは 最大15秒（従来は10秒）"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "生成できる長さは 最大15秒（従来は10秒）",
+            "料金は 720pで1秒あたり0.07ドル、前版（1.1 Flash）比で 約30%安価",
+            "背景・照明・カメラアングルなどを作り直さずに修正できる 会話型（マルチターン）編集",
+            "参照画像への忠実度、リップシンク、複数話者の区別を改善"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "性能向上の多くはGoogleの発表に基づくもので、第三者による検証はまだです。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "X、Webアプリの配信基盤をゼロから再構築",
+      "points": [],
+      "published": "2026年11月4日",
+      "source": "X Engineering Blog、gihyo.jp",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "約10年使われてきた 3つのサーバー（一般ユーザー向けSPAのrweb、クローラー向けのrweb SSR、公開ページ向けのJetfuel SSR）を1つに統合 しました。",
+          "keyFigure": {
+            "value": "2MB制限",
+            "label": "クローラー: 全Suspense境界の解決を待って完成HT…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "Next.jsなどのフルスタックフレームワークではなく Fastify 上に など",
+            "配信先ごとにパイプラインを分岐",
+            "一般ユーザー: シェルを即座に返し、HTMLを順次ストリーム。HTMLに埋め込んだGraphQL応答を Relay ス…",
+            "クローラー: 全Suspense境界の解決を待って完成HTMLを返し、Googlebotの 2MB制限 内に収める"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "公開された数値はこの 1指標のみ。ログイン済みページは 国ごとに段階移行中 で、移行期間中は旧サーバーも並行稼働しています。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "language",
+      "title": "Zig 0.17.1リリース",
+      "points": [],
+      "published": "2026年11月3日",
+      "source": "Zig公式ニュース",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "システムプログラミング言語 Zig 0.17.1 が公開されました。バグ修正リリース です。",
+          "keyFigure": {
+            "value": "57件以上の問題",
+            "label": "10月2日公開の0.17.0以降に報告された 57件以上の…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "10月2日公開の0.17.0以降に報告された 57件以上の問題 を修正",
+            "特に リグレッション と アップグレードを妨げていた問題 を重点対応",
+            "0.17.0へ移行できなかったユーザーの多くが 0.17.1なら移行できる見込み",
+            "参考: 0.17.0ではビルドシステムの刷新（Build Server Protocol導入） など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "個別の修正内容はCodebergのマイルストーンで確認できます。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Gemini Omni 1.2 Flashが正式提供。15秒動画を 会話で部分修正 でき など",
+      "Web: Xが3サーバーを統合し、Fastify＋ストリーミングSSR で低速回線時の表示を大幅短縮",
+      "言語: Zig 0.17.1で0.17.0の不具合を集中修正。移行を見送っていた人は試し時"
+    ]
+  },
+  "subTheme": "プログラミング言語"
+}
