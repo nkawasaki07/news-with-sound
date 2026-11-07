@@ -1,57 +1,113 @@
 {
-  "version": 1,
-  "generatedFrom": "markdown",
+  "version": 2,
   "title": "AIとWebの最前線 デイリーニュースキャスト",
   "dateLabel": "2026年11月8日（日）",
+  "subTheme": "プログラミング言語",
   "topics": [
     {
       "number": 1,
       "category": "ai",
       "title": "OpenAIが画像生成モデル「GPT-Image 2.6」を公開",
-      "points": [
-        "2モデル構成: 速度重視の gpt-image-2.6-flare など",
-        "生成速度は前版比 約50%高速（OpenAI発表）",
-        "APIで アニメーションGIF出力（2〜64フレーム）、SVG書き出し など"
-      ],
-      "published": "2026年11月5日",
       "source": "CGinterest、gihyo.jp",
-      "keyFigure": {
-        "value": "約50%高速",
-        "label": "生成速度は前版比 約50%高速（OpenAI発表）"
-      }
+      "published": "2026年11月5日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "画像生成の新バージョンが登場。ChatGPT・Codex・APIで利用できる",
+          "keyFigure": { "value": "約50%高速", "label": "生成速度（前版比・OpenAI発表）" }
+        },
+        {
+          "layout": "compare",
+          "heading": "2つのモデル",
+          "left": { "label": "flare", "items": ["速度重視", "gpt-image-2.6-flare"] },
+          "right": { "label": "sunburst", "items": ["精度重視", "gpt-image-2.6-sunburst"] }
+        },
+        {
+          "layout": "points",
+          "heading": "APIの新機能",
+          "points": [
+            "アニメーションGIF出力（2〜64フレーム）",
+            "SVG書き出し",
+            "透明PNGで指示するマークアップ編集",
+            "描き込み量を決める complexity パラメータ"
+          ]
+        }
+      ]
     },
     {
       "number": 2,
       "category": "web",
       "title": "Safari 27.3ベータ公開、TemporalやCSS新関数に一挙対応",
-      "points": [
-        "JavaScript: Temporal、import defer など",
-        "CSS: @function、if()、attr()、inherit() など",
-        "HTML/Web API: popover=hint、dialog の closedby など"
-      ],
+      "source": "Apple Safari 27.3 Beta Release Notes、9to5Mac",
       "published": "2026年11月3日",
-      "source": "Apple Safari 27.3 Beta Release Notes、9to5Mac"
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "縦型タブとAdaptive Dark Modeに加え、開発者向けのWeb標準を大量に取り込んだベータ版",
+          "keyFigure": { "value": "12月", "label": "正式版の見込み（9to5Mac報道）" }
+        },
+        {
+          "layout": "points",
+          "heading": "JavaScriptとCSS",
+          "points": [
+            "JS: Temporal、import defer、Symbol.dispose",
+            "JS: Iterator.zip()、テキストモジュール",
+            "CSS: @function、if()、attr()、inherit()",
+            "CSS: corner-shape、random-item()"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "HTML・Web API・Wasm",
+          "points": [
+            "popover=hint、dialog の closedby",
+            "viewport の interactive-widget",
+            "WebAssembly Memory64 と relaxed SIMD"
+          ]
+        }
+      ]
     },
     {
       "number": 3,
       "category": "language",
       "title": "Odin言語の11月ニュースレター、Androidターゲットに対応",
-      "points": [
-        "Android対応: -subtarget:android（arm64/arm32/amd64/i…",
-        "言語: 変数への @(align=N)、return_address などの組み込み関数 など",
-        "標準ライブラリ: core:diff、core:compress/lz4 など"
-      ],
+      "source": "Odin公式ニュースレター",
       "published": "2026年11月3日",
-      "source": "Odin公式ニュースレター"
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "C言語の代替を目指すシステム言語Odinが、Androidアプリのビルドに対応",
+          "keyFigure": { "value": "API 29+", "label": "対応するAndroidのバージョン" }
+        },
+        {
+          "layout": "steps",
+          "heading": "Androidアプリを作る流れ",
+          "steps": [
+            "-subtarget:android でビルド",
+            "arm64/arm32/amd64/i386 に対応",
+            "odin bundle android を実行",
+            "署名済みAPK/AABができる"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "そのほかの更新",
+          "points": [
+            "変数への @(align=N) 指定",
+            "core:diff、core:compress/lz4 を追加",
+            "Deflate圧縮の追加とInflateの書き直し",
+            "WindowsビルドはLLVM 22.1.8"
+          ]
+        }
+      ]
     }
   ],
   "summary": {
     "points": [
-      "OpenAIが画像生成モデル「GPT-Image 2.6」を公開",
-      "Safari 27.3ベータ公開、TemporalやCSS新関数に一挙対応",
-      "Odin言語の11月ニュースレター、Androidターゲットに対応"
+      "GPT-Image 2.6：GIF・SVG出力などAPIの機能が大幅に拡大",
+      "Safari 27.3ベータ：TemporalやCSS新関数が使える日が近づく",
+      "Odin：Androidアプリのビルドに対応"
     ],
-    "closing": "特にSafariの対応で、Temporal やCSSの新関数を本番環境で使える日が近づいています。"
-  },
-  "subTheme": "プログラミング言語"
+    "closing": "特にSafariの対応で、TemporalやCSSの新関数を本番環境で使える日が近づいています。"
+  }
 }

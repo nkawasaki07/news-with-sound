@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "AIとWebの最前線 デイリーニュースキャスト",
   "dateLabel": "2026年11月2日（月）",
   "subTheme": "セキュリティ",
@@ -8,57 +8,128 @@
       "number": 1,
       "category": "ai",
       "title": "GitHub Copilot Fusionが一般提供に",
-      "points": [
-        "タスクごとにAIモデルの選択と組み合わせを自動化",
-        "Single／Cascade／Critiqueの3つの実行パターン",
-        "全Copilotプランが対象。VS Code・JetBrains・CLIで利用可"
-      ],
-      "keyFigure": { "value": "3段階", "label": "努力レベル Standard / High / Max" },
-      "takeaway": "追加料金はなく使われたモデルの従量課金。High/Maxは消費増に注意",
       "source": "GitHub Universe 2026、gihyo.jp",
-      "published": "2026年10月28日"
+      "published": "2026年10月28日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "タスクごとにAIモデルの選択と組み合わせを自動で行う機能が正式提供。全Copilotプランが対象",
+          "keyFigure": { "value": "3段階", "label": "努力レベル Standard / High / Max" }
+        },
+        {
+          "layout": "steps",
+          "heading": "3つの実行パターン",
+          "steps": [
+            "Single: 1つのモデルで処理",
+            "Cascade: 判定役が下書きを検査し強いモデルへ",
+            "Critique: 複数モデルで批評し合う"
+          ]
+        },
+        {
+          "layout": "action",
+          "heading": "使う前に",
+          "items": [
+            "VS Code・JetBrains・CLI・Copilotアプリで利用可",
+            "追加料金はなく、使われたモデルの従量課金",
+            "High/Maxは消費が増える場合あり。性能の主張はGitHub発表値"
+          ]
+        }
+      ]
     },
     {
       "number": 2,
       "category": "web",
       "title": "Next.jsがバンドル削減スキル「next-bundle-optimizer」を公開",
-      "points": [
-        "AIエージェントがTurbopackのモジュールグラフを解析",
-        "lazy()したつもりが静的importで先読みされる箇所を検出",
-        "既定はレポートのみ。fix指定で修正と再計測まで実行"
-      ],
-      "keyFigure": { "value": "約2MB", "label": "v0とvercel.comで削減（圧縮後）" },
-      "takeaway": "Next.js 16.4以降・Turbopackが前提。next analyzeも強化",
       "source": "Next.js公式ブログ",
-      "published": "2026年10月28日"
+      "published": "2026年10月28日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "AIエージェントがJavaScriptバンドルを解析し、無駄を見つけて削減するスキル",
+          "keyFigure": { "value": "約2MB", "label": "v0とvercel.comで削減（圧縮後）" }
+        },
+        {
+          "layout": "points",
+          "heading": "見つけてくれる問題",
+          "points": [
+            "lazy()したつもりが静的importで先読み",
+            "RSCへ移せるコンポーネント",
+            "重複した大型の依存パッケージ",
+            "tree shakingが効かない箇所"
+          ]
+        },
+        {
+          "layout": "steps",
+          "heading": "使い方",
+          "steps": [
+            "Next.js 16.4以降・Turbopackを用意",
+            "npx skills add でスキルを追加",
+            "/next-bundle-optimizer でレポート",
+            "fix 指定で修正と再計測まで実行"
+          ]
+        }
+      ]
     },
     {
       "number": 3,
       "category": "security",
       "title": "RustのZIPライブラリ「zip（zip2）」にCVSS 10.0の脆弱性",
-      "points": [
-        "検査と展開で別々のファイル名ヘッダーを読むパーサー不一致",
-        "無害に見えるZIPで任意ファイル上書き、RCEのおそれ",
-        "9.0.4までの全バージョンが影響"
-      ],
-      "keyFigure": { "value": "CVSS 10.0", "label": "CVE-2026-115905" },
-      "takeaway": "9.0.5へ更新し、enforce_header_consistencyを有効化する",
       "source": "Wiz Vulnerability Database",
-      "published": "2026年10月26日"
+      "published": "2026年10月26日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "検査では無害に見えるZIPで、展開時に任意のファイルを上書きできる脆弱性",
+          "keyFigure": { "value": "CVSS 10.0", "label": "CVE-2026-115905" }
+        },
+        {
+          "layout": "compare",
+          "heading": "原因はパーサーの不一致",
+          "left": { "label": "ZipArchive", "items": ["中央ディレクトリ（CDFH）を読む", "検査ではこちらの名前"] },
+          "right": { "label": "ZipStreamReader", "items": ["ローカルヘッダー（LFH）だけ読む", "展開はこちらの名前"] }
+        },
+        {
+          "layout": "action",
+          "heading": "今すぐやること",
+          "items": [
+            "9.0.5以降へ更新（9.0.4まで全バージョンが影響）",
+            "enforce_header_consistency を有効化（オプトイン）",
+            "名前が食い違うZIPを拒否し、展開処理を隔離する"
+          ]
+        }
+      ]
     },
     {
       "number": 4,
       "category": "security",
       "title": "Ivanti Connect Secureで悪用中のゼロデイ2件を追加修正",
-      "points": [
-        "権限昇格と、認証済み攻撃者によるファイルアップロード",
-        "10月の認証バイパスと連鎖し、パッチ済み機器でもroot実行",
-        "攻撃者はログ改ざんでIntegrity Checkerを回避"
-      ],
-      "keyFigure": { "value": "5,000台超", "label": "インターネット公開中のICS（Shadowserver）" },
-      "takeaway": "Ivantiのアドバイザリで修正版を確認し、侵害痕跡も調べる",
       "source": "BleepingComputer",
-      "published": "2026年11月2日"
+      "published": "2026年11月2日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "10月の認証バイパスに続き、連鎖攻撃に使われていた2件の脆弱性が修正された",
+          "keyFigure": { "value": "5,000台超", "label": "インターネット公開中のICS" }
+        },
+        {
+          "layout": "steps",
+          "heading": "攻撃の連鎖",
+          "steps": [
+            "認証バイパス（CVE-2026-104935）",
+            "権限昇格（CVE-2026-111357）",
+            "ファイルアップロード（CVE-2026-118527）",
+            "ログ改ざんで検知を回避"
+          ]
+        },
+        {
+          "layout": "action",
+          "heading": "利用者がやること",
+          "items": [
+            "Ivantiのアドバイザリで修正版を確認し適用",
+            "パッチ済み機器も侵害されている前提で痕跡を調査"
+          ]
+        }
+      ]
     }
   ],
   "summary": {
