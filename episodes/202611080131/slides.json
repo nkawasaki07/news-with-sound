@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月8日（日）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "OpenAIが画像生成モデル「GPT-Image 2.6」を公開",
+      "points": [
+        "2モデル構成: 速度重視の gpt-image-2.6-flare など",
+        "生成速度は前版比 約50%高速（OpenAI発表）",
+        "APIで アニメーションGIF出力（2〜64フレーム）、SVG書き出し など"
+      ],
+      "published": "2026年11月5日",
+      "source": "CGinterest、gihyo.jp",
+      "keyFigure": {
+        "value": "約50%高速",
+        "label": "生成速度は前版比 約50%高速（OpenAI発表）"
+      }
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Safari 27.3ベータ公開、TemporalやCSS新関数に一挙対応",
+      "points": [
+        "JavaScript: Temporal、import defer など",
+        "CSS: @function、if()、attr()、inherit() など",
+        "HTML/Web API: popover=hint、dialog の closedby など"
+      ],
+      "published": "2026年11月3日",
+      "source": "Apple Safari 27.3 Beta Release Notes、9to5Mac"
+    },
+    {
+      "number": 3,
+      "category": "language",
+      "title": "Odin言語の11月ニュースレター、Androidターゲットに対応",
+      "points": [
+        "Android対応: -subtarget:android（arm64/arm32/amd64/i…",
+        "言語: 変数への @(align=N)、return_address などの組み込み関数 など",
+        "標準ライブラリ: core:diff、core:compress/lz4 など"
+      ],
+      "published": "2026年11月3日",
+      "source": "Odin公式ニュースレター"
+    }
+  ],
+  "summary": {
+    "points": [
+      "OpenAIが画像生成モデル「GPT-Image 2.6」を公開",
+      "Safari 27.3ベータ公開、TemporalやCSS新関数に一挙対応",
+      "Odin言語の11月ニュースレター、Androidターゲットに対応"
+    ],
+    "closing": "特にSafariの対応で、Temporal やCSSの新関数を本番環境で使える日が近づいています。"
+  },
+  "subTheme": "プログラミング言語"
+}
