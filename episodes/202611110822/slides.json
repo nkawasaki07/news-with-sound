@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月11日（水）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Thinking Machines、新モデル「Inkling 2 Small」を公開",
+      "points": [],
+      "published": "2026年11月5日",
+      "source": "Thinking Machines、gihyo.jp",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Thinking Machinesが新モデル Inkling 2 Small を発表。総約5940億・アクティブ約170億パラメータのMoEで、テキストと画像を入力できます。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "複数ステップのタスクやWebページの見た目の確認、さまざまな実行環境への適応が得意とされる",
+            "Tinker APIで推論とファインチューニングを即日提供",
+            "学習の全工程でNVFP4（4ビット浮動小数点）を使用",
+            "重みは外部の安全性テスト後に公開予定"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "ベンチマーク（AA Index v5.0で30.6、DeepSWE v1.1で72.1%など）は発表元の数値"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Chrome 157安定版、HTMLをcanvasに描ける機能が正式搭載",
+      "points": [],
+      "published": "2026年11月4日",
+      "source": "Chrome Geek、Web Standards、Chrome Platform Status",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "11月3日にChrome 157安定版が公開されました。目玉は HTML-in-canvas。",
+          "keyFigure": {
+            "value": "213件",
+            "label": "セキュリティ修正は213件（Critical 7件）"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "cornerショートハンド: border-radiusとcorner-shapeをまとめて指定",
+            "text-overflowに任意の文字列: 切り詰め時に「(more)」などを表示",
+            "HTML挿入・ストリーミング系メソッド: appendHTML()などの位置指定メソッドでinsertAdjacent…",
+            "position-visibilityにanchor-valid・anchor-visible（複数形は非推奨エイリア…"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "Long Animation FramesにstyleDurationなどを追加し、スタイルとレイアウトの時間を分離",
+            "セキュリティ修正は213件（Critical 7件）"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "language",
+      "title": ".NET 11正式版リリース、C# 15のユニオン型が使えるように",
+      "points": [],
+      "published": "2026年11月11日",
+      "source": "Publickey",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "マイクロソフトが .NET Conf 2026 で .NET 11正式版を発表しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "C# 15のユニオン型: 決められた複数の型のうち1つを保持し、switchの網羅性をコンパイラがチェック",
+            "ランタイムネイティブasync: 非同期処理をランタイムが直接扱いオーバーヘッドを低減",
+            "JIT: 配列の範囲チェックやオーバーフローチェックの削減、小さなswitchの分岐なし展開",
+            "AOT: 複数インターフェイス呼び出しの共有ディスパッチで高速化・小型化"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "新ツール dotnetupでSDKやランタイムのバージョンを管理",
+            "論理プロセッサ1024個の上限撤廃、一方でPentium 4などの古いCPUはサポート外に",
+            ".NET 11は2年サポートのSTS。業務システムにはLTSの.NET 10が推奨"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "language",
+      "title": "MCPの公式Ruby SDKが最上位のTier 1に",
+      "points": [],
+      "published": "2026年11月9日",
+      "source": "Publickey",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "AIエージェントと外部ツールをつなぐ規格 MCP の公式Ruby SDKが Tier 1 に到達しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "Tier 1: サーバー・クライアント両方の実装が仕様に準拠（非推奨と明記された2機能を除く）",
+            "ステートレス接続を含む最新仕様の全機能に対応",
+            "TypeScript・Python・C#・Go・Rustに続く6言語目",
+            "次期MCP仕様（2027年3月下旬予定）にも対応する計画"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Inkling 2 SmallがTinkerで利用可能に、重み公開は近日予定",
+      "Web: Chrome 157でHTML-in-canvasとHTMLストリーミング挿入が正式搭載",
+      "言語: .NET 11とC# 15のユニオン型が正式版に、MCP Ruby SDKがTier 1入り"
+    ],
+    "closing": "Chromeは自動更新で新APIがすぐ届くので、HTML-in-canvasやストリーミング挿入を試すには良いタイミングです。"
+  },
+  "subTheme": "プログラミング言語"
+}
