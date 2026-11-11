@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月12日（木）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Anthropic、Claude Fable 5.2とMythos 5.2を公開",
+      "points": [],
+      "published": "2026年11月9日",
+      "source": "Claude Platform Docs、The Next Web",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Anthropicが新フラッグシップの Claude Fable 5.2 と Claude Mythos 5.2 を公開しました。",
+          "keyFigure": {
+            "value": "約20%値下げ",
+            "label": "料金は 入力$8・出力$40（100万トークンあたり）で、…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "モデルID: claude-fable-5-2 ／ claude-mythos-5-2",
+            "コンテキスト100万トークン、最大出力12.8万トークン など",
+            "料金は 入力$8・出力$40（100万トークンあたり）で など",
+            "Mythos 5.2はサイバー・生物学分野の制限を緩めた版で、審査済み組織のみ利用可"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "会話履歴は追記のみで扱う作りになっているかを確認してから切り替えましょう。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Vite開発サーバーに深刻なリモートコード実行の脆弱性",
+      "points": [],
+      "published": "2026年11月10日",
+      "source": "Vite GitHub Security Advisory、JavaScript Weekly",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Viteで 深刻度Critical（CVSS v4 9.1） の脆弱性（GHSA-p4f5-76q4-ffq7）が公開されました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "リゾルバーが、URL由来のモジュールIDを エスケープせずに 仮想モジュール __vite-browser-exter…",
+            "細工したリクエストでコードを注入でき、server.fs制限を回避したファイル読み取り や 開発サーバー上での任意コー…",
+            "条件は、--host や server.host で 開発サーバーをネットワークに公開している場合",
+            "修正版: vite 8.3.7 / 8.2.5 / 8.1.7 / 7.3.8 / 6.4.6 など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "共有の開発環境やLAN上でViteを動かしている場合は、すぐに更新しましょう。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "mobile",
+      "title": ".NET MAUI 11が正式版に、全プラットフォームでCoreCLRに統一",
+      "points": [],
+      "published": "2026年11月11日",
+      "source": "Publickey",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": ".NET 11と同時に .NET MAUI 11 が正式リリースされました。7月のプレビュー時点で予告されていた変更が、正式版で確定した形です。",
+          "keyFigure": {
+            "value": "10%以内",
+            "label": "マイクロソフトによると、iOS・Mac Catalystは…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "iOS・Android・Mac Catalystで使われていた Xamarin由来のMonoランタイムを廃止し など",
+            "モバイルでも 段階的JIT、ReadyToRun（事前コンパイル）、PGO（プロファイルに基づく最適化） が使える",
+            "iOS／Mac Catalystで必要なNative AOTのツールチェーンも統一。AndroidのAOT対応も予定",
+            "マイクロソフトによると、iOS・Mac Catalystは おおむね高速化 など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "ランタイムが変わるため、移行前の互換性確認が推奨されています。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Claude Fable 5.2は値下げと高速化の一方、会話履歴の扱いが厳しくなった",
+      "Web: ネットワークに公開した Vite開発サーバー に重大な脆弱性。すぐ更新を",
+      "モバイル: .NET MAUI 11 でMonoからCoreCLRへの移行が完了"
+    ],
+    "closing": "どれも、新しいバージョンに切り替える前の確認が大事な話題でした。"
+  },
+  "subTheme": "モバイル・デスクトップ"
+}
