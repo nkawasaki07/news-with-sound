@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月13日（金）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "メタが最小・最安のエージェント向けモデル「Muse Ember」を公開",
+      "points": [],
+      "published": "2026年11月9日",
+      "source": "Meta AI Research Blog",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "メタが同社で最も小さく効率的なモデル「Muse Ember」を発表しました。ツール呼び出し、コーディングのサブタスク、情報抽出など、エージェントが繰り返す作業向けのモデルです。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "コンテキスト100万トークン、最大出力51.2万トークン",
+            "テキスト・画像・音声・動画をネイティブに理解",
+            "料金（20万トークン以下の入力、100万トークンあたり）: 入力$0.10／出力$0.50",
+            "Meta Model APIとMuse Codeで提供（モデルID muse-ember-1.0） など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "Claude Haiku 5.5と同等以上とするベンチマークはメタの発表に基づく数値です（FrontierCode 2.0-AAではHai…"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Chromeチームが「Modern Web Guidance 1.0」を公開、FirefoxとEdgeも参加",
+      "points": [],
+      "published": "2026年11月10日",
+      "source": "Chrome for Developers Blog",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "AIコーディングエージェントに最新のWeb標準を使わせるためのスキル集が1.0になりました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "モダナイズ機能を追加: HTML・CSS・JavaScript・package.jsonを解析し など",
+            "ガイドを拡充し、技術責任者とアクセシビリティ専門家のレビュー、評価結果の公開ダッシュボードも用意",
+            "FirefoxとEdgeがプロジェクトに参加",
+            "導入: npx modern-web-guidance@latest install。Claude Code など"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "Node.jsが16件の脆弱性を修正、HTTP/2とTLSに注意",
+      "points": [],
+      "published": "2026年11月11日",
+      "source": "Node.js公式ブログ、The Hacker News",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Node.jsの22・24・26系で16件（うち高7件）の脆弱性を修正するセキュリティリリースです。修正版は22.23.5／24.22.3／26.13.1。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CVE-2026-123863: 既定のHTTP/2サーバーを認証不要でクラッシュさせられる（24・26系）",
+            "CVE-2026-123864: 条件次第でHTTPSサーバーが他の接続のメモリ（他ユーザーのリクエストやTLS秘密鍵…",
+            "HTTP/2のメモリ漏えい、respondWithFile()でのメモリ破壊 など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "回避策は示されておらず、更新が唯一の対処です。",
+            "サポート終了の20系・25系には修正が出ません。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "マイクロソフト11月の月例パッチ、悪用中のOutlookゼロデイを修正",
+      "points": [],
+      "published": "2026年11月10日",
+      "source": "Qualys、窓の杜",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "マイクロソフトの11月定例更新は、修正件数が集計により1,093〜1,235件と、2か月連続で1,000件超えです。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CVE-2026-124194（Outlookのなりすまし）が実悪用: 細工したメッセージファイルを開くと など",
+            "CISAがKEVカタログに追加し、2026年11月24日までの対応を要求",
+            "Office各製品、IIS、LDAP、Schannel、SMBなどにCriticalのリモートコード実行が多数"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "次回のPatch Tuesdayは12月8日の予定です。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: メタのMuse Emberは、100万トークン文脈と低価格でエージェントの下請け作業を狙う小型モデル",
+      "Web: Modern Web Guidance 1.0で など",
+      "セキュリティ: Node.js（HTTP/2・TLS）とOutlookゼロデイは優先度高。週末前の更新を推奨"
+    ]
+  },
+  "subTheme": "セキュリティ"
+}
