@@ -1,0 +1,130 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月16日（月）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Google、高速・低価格の新モデル「Gemini 4 Hydrogen」を公開",
+      "points": [],
+      "published": "2026年11月12日",
+      "source": "GCN、Xtone「今週のフロントエンド」",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Gemini 4ファミリーで Carbon・Argonの下に位置する高速・低価格モデル。リポジトリ単位のコーディングやデバッグ、エージェント的な作業向けです。",
+          "keyFigure": {
+            "value": "2.5倍高速",
+            "label": "Gemini 3.8 Flash比で 2.5倍高速 など"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "思考レベルは low / medium / high / 新設のxhigh の4段階",
+            "Google AI Studio・Gemini API で即日利用可。Antigravity（AI Pro/Ultra…",
+            "料金は 入力 $1.50 / 出力 $7.50（100万トークンあたり など",
+            "Gemini 3.8 Flash比で 2.5倍高速 など"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "エージェントがUIを返すプロトコル「A2UI 1.0」が正式版に",
+      "points": [],
+      "published": "2026年11月11日",
+      "source": "Google Developers Blog、SD Times",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "AIエージェントが文章の代わりに フォームやグラフなどの操作できる画面 を返すためのオープンプロトコルで、今回が 初の安定版。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "エージェントは「何を表示するか」だけを記述し、描画は各アプリのネイティブコンポーネントで行う",
+            "開発者が登録した部品しか使えないので、デザインシステムから外れない",
+            "Webレンダラーは React・Angular・Lit。ほかにFlutter・SwiftUI（Jetpack Comp…",
+            "1.0の新機能: 双方向の関数呼び出し、アクセシビリティ対応、拡張メタデータ"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "エージェントSDKは TypeScript・Dart・Python。データはサーバー側でバインドされ など"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "Apache HTTP Server 2.4.71、mod_http2のRCEを修正",
+      "points": [],
+      "published": "2026年11月11日",
+      "source": "SecurityOnline、Qiita週次脆弱性まとめ",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "CVE-2026-119618: mod_http2の assign_headers() に 競合状態（CWE-362…"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CVE-2026-119618: mod_http2の assign_headers() に 競合状態（CWE-362…",
+            "影響: 2.4.55〜2.4.70（GitHub版mod_h2 2.0.8〜2.0.42も）→ 2.4.71で修正",
+            "深刻度の評価は分かれていて、CVSSv3 8.1とする情報と9.8とする情報がある。報告者にはAnthropicのOS…",
+            "同時修正: mod_mdのNULLポインタ参照 CVE-2026-106023 など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "悪用は未確認。すぐに更新できない場合は、不要ならmod_http2・mod_mdを無効化"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "Check Point製品にゼロデイ、root奪取の攻撃が進行中",
+      "points": [],
+      "published": "2026年11月13日",
+      "source": "BleepingComputer",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "CVE-2026-123039: Gaia OSのDynamicCLIデーモン（dynamic_server）が など"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CVE-2026-123039: Gaia OSのDynamicCLIデーモン（dynamic_server）が など",
+            "対象: Firewall、Security Gateway、Security Management Server など",
+            "10月下旬から数十の顧客で悪用を確認。PHP2Shellの脆弱性でMobile Accessポータルに侵入し など",
+            "対策: 緊急ホットフィックス（SK1000362）を適用。すぐに適用できない場合は dynamic_serverを停止…"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Gemini 4 Hydrogenで など",
+      "Web: A2UI 1.0でエージェントのUI生成が「登録済みコンポーネントを宣言的に組み合わせる」形で安定版になった",
+      "🔒 セキュリティ: HTTP/2を有効にしているApacheは 2.4.71へ更新。Check Point利用者はホ…"
+    ]
+  },
+  "subTheme": "セキュリティ"
+}
