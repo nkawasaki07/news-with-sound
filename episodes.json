@@ -1,5 +1,13 @@
 [
   {
+    "date": "202611160840",
+    "title": "AIとWebの最前線 デイリーニュースキャスト",
+    "audioPath": "episodes/202611160840/podcast_script.mp3",
+    "scriptPath": "episodes/202611160840/podcast_script.md",
+    "slidesPath": "episodes/202611160840/slides.json",
+    "timelinePath": "episodes/202611160840/timeline.json"
+  },
+  {
     "date": "202611160136",
     "title": "AIとWebの最前線 デイリーニュースキャスト",
     "audioPath": "episodes/202611160136/podcast_script.mp3",

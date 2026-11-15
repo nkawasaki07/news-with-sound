@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月16日（月）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "IBM、プロンプトインジェクションに強いGranite 4.1 LLMONプレビューを公開",
+      "points": [],
+      "published": "2026年11月12日",
+      "source": "Hugging Face モデルカード、AI Weekly",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "IBMがGranite 4.1ベースの実験モデル LLMONプレビュー（3B／8B） を公開。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "LLMON（LLM Object Notation）: プロンプトを instr・data・doc・tool などのブ…",
+            "データやツール結果に含まれる命令には従わないよう学習（間接プロンプトインジェクション対策）",
+            "IBMの自社テスト（OPI・ASB・StruQ）で攻撃成功率が 53〜100% → 0.02〜5.6% に低下",
+            "通常のチャット形式は想定外入力で品質低下。「学習による振る舞いで保証ではない」 とIBM自身が注意喚起"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "Apache 2.0、apply_chat_template で利用、vLLM・SGLangに対応"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Firefox 160公開、WebTransportとオンデバイス音声認識を強化",
+      "points": [],
+      "published": "2026年11月10日",
+      "source": "MDN Firefox 160 リリースノート",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "WebTransport: コンストラクターに headers オプション など"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "WebTransport: コンストラクターに headers オプション など",
+            "datagramsReadableType: \"bytes\" でデータグラムを BYOBリーダーで再利用バッファに読み…",
+            "⚠️ 破壊的変更: exportKeyingMaterial() の context 引数が必須に など",
+            "非標準の incomingHighWaterMark 等を削除し incomingMaxBufferedDatagra…"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "Web Speech APIがデスクトップで40言語のオンデバイス音声認識に対応（Androidは非対応）",
+            "CSS: ::-webkit-input-placeholder を ::placeholder の別名としてサポート"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "ChromeのXML処理にゼロデイ CVE-2026-125350、悪用を確認",
+      "points": [],
+      "published": "2026年11月9日",
+      "source": "BleepingComputer",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "XMLパーサーの Use-After-Free（重要度High）"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "XMLパーサーの Use-After-Free（重要度High）",
+            "Googleは 実環境での悪用を確認、2026年8件目のChromeゼロデイ",
+            "修正: デスクトップ 157.0.8103.50 以降（Mac は .50/.51）",
+            "EdgeやElectronアプリなど Chromiumベース製品も更新確認を。CISA KEV登録済み（期限11/24）"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "Fortinet 11月定例、FortiMailなどにCritical多数",
+      "points": [],
+      "published": "2026年11月10日",
+      "source": "Rescana、Fortinet PSIRT",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "FortiMail: 認証不要のパストラバーサル・コマンドインジェクション・SQLインジェクション（CVSS 9.4〜…",
+          "keyFigure": {
+            "value": "CVSS 9.4〜9.8",
+            "label": "FortiMail: 認証不要のパストラバーサル・コマンド…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "FortiMail: 認証不要のパストラバーサル・コマンドインジェクション・SQLインジェクション（CVSS 9.4〜…",
+            "FortiManager（FGFM認可不備）、FortiAuthenticator（ハードコードパスワード等）にもCr…",
+            "FortiOS: OSPF認証バイパス CVE-2026-126253（隣接ネットワーク限定） など",
+            "修正例: FortiOS 8.0.2／7.6.8／7.4.13／7.2.14 など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "悪用は未確認だが、外部公開機器から優先して更新を"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "AI: LLMONのように「指示とデータを構造で分ける」アプローチがモデル側にも入ってきた。ただし単独の防御策にはしな…",
+      "Web: Firefox 160は WebTransportの破壊的変更に注意",
+      "セキュリティ: Chromeは悪用中、まずブラウザ更新を。Fortinet製品を運用しているなら11月定例の適用を"
+    ]
+  },
+  "subTheme": "セキュリティ"
+}

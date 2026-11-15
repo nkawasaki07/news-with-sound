@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "duration": 225.611,
+  "segments": [
+    {
+      "start": 0,
+      "duration": 6.987,
+      "kind": "intro",
+      "topic": null,
+      "text": "AIとWebの最前線　デイリーニュースキャスト\n2026年11月16日（月曜日）"
+    },
+    {
+      "start": 6.987,
+      "duration": 11.435,
+      "kind": "intro",
+      "topic": null,
+      "text": "おはようございます。AIとWebの最前線、デイリーニュースキャストのお時間です。\n本日は4個のトピックをお届けします。それでは早速、見ていきましょう。"
+    },
+    {
+      "start": 18.421,
+      "duration": 8.576,
+      "kind": "topic",
+      "topic": 1,
+      "text": "トピック1　IBM、プロンプトインジェクションに強いGranite 4.1 LLMONプレビューを公開"
+    },
+    {
+      "start": 26.997,
+      "duration": 49.024,
+      "kind": "topic",
+      "topic": 1,
+      "text": "IBMが11月12日、Granite 4.1をベースにした実験的なモデル、LLMONプレビュー版の3Bと8Bを公開しました。LLMONは、プロンプトを「指示」「データ」「ツールの結果」などのブロックに分けて書く専用の記法で、データの中に紛れ込んだ命令には従わないよう学習されています。これは、外部の文書やWebページに仕込まれた命令でAIが操られる、間接プロンプトインジェクションへの対策です。IBMの自社テストでは攻撃成功率が5パーセント台以下まで下がったとしていますが、あくまで学習による振る舞いで保証ではない、と本人たちも明言しています。ライセンスはApache 2.0で、Hugging Faceから入手できます。"
+    },
+    {
+      "start": 76.021,
+      "duration": 7.307,
+      "kind": "topic",
+      "topic": 2,
+      "text": "トピック2　Firefox 160公開、WebTransportとオンデバイス音声認識を強化"
+    },
+    {
+      "start": 83.328,
+      "duration": 37.621,
+      "kind": "topic",
+      "topic": 2,
+      "text": "11月10日、Firefox 160の安定版が公開されました。目玉は、ブラウザとサーバー間で低遅延の通信を行うWebTransportの強化で、接続時に独自のHTTPヘッダーを送れるようになり、データグラムをバイトストリームとして効率よく読めるようになりました。一方、exportKeyingMaterialは引数が必須になる破壊的変更なので、利用中の方は確認が必要です。また、デスクトップ版ではWeb Speech APIで、40言語の音声認識をクラウドを使わず端末上で行えるようになりました。"
+    },
+    {
+      "start": 120.949,
+      "duration": 5.045,
+      "kind": "topic",
+      "topic": 3,
+      "text": "トピック3　ChromeのXML処理にゼロデイ、悪用を確認"
+    },
+    {
+      "start": 125.995,
+      "duration": 35.925,
+      "kind": "topic",
+      "topic": 3,
+      "text": "今日のセキュリティコーナーです。Googleは11月9日、ChromeのXML処理部分にあるUse-After-Free、つまり解放済みのメモリを使ってしまう脆弱性CVE-2026-125350を修正しました。Googleは実際に悪用されていることを確認しており、今年8件目のChromeゼロデイです。デスクトップ版は157.0.8103.50以降で修正されています。EdgeやElectronアプリなど、Chromiumベースの製品も更新を確認しておきましょう。"
+    },
+    {
+      "start": 161.92,
+      "duration": 5.813,
+      "kind": "topic",
+      "topic": 4,
+      "text": "トピック4　Fortinet、11月の定例でFortiMailなどにCritical多数"
+    },
+    {
+      "start": 167.733,
+      "duration": 33.525,
+      "kind": "topic",
+      "topic": 4,
+      "text": "続いてもセキュリティの話題です。Fortinetは11月10日、定例のセキュリティ情報を公開しました。FortiMailには認証なしで突かれるパストラバーサルやコマンドインジェクション、SQLインジェクションなど、CVSS 9点台の深刻な脆弱性が複数含まれます。FortiManagerやFortiAuthenticator、FortiOSのOSPFやSSHにも修正が出ています。現時点で悪用は確認されていませんが、外部に公開している機器から優先して更新するのが賢明です。"
+    },
+    {
+      "start": 201.259,
+      "duration": 24.352,
+      "kind": "summary",
+      "topic": null,
+      "text": "本日は、IBMのプロンプトインジェクション対策モデル、Firefox 160の新機能、そしてChromeのゼロデイとFortinet製品の脆弱性をお届けしました。特にChromeは悪用が確認されていますので、まずはブラウザの更新からどうぞ。\nそれでは、今週も良い一週間を。AIとWebの最前線、デイリーニュースキャストでした。"
+    }
+  ]
+}
