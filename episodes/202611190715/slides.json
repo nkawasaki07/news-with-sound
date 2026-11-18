@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月19日（木）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "マイクロソフト、コーディング用AIモデル「MAI Code 2」「MAI Code 2 Flash」を発表",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "Publickey、The Decoder",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Microsoft Ignite 2026で、自社開発のコーディングモデル MAI Code 2（フラグシップ）と MAI Code 2 Flash（低価格版）が発表されました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "MAI Code 2: 本番向けコード生成、難しいデバッグ、リポジトリ推論 など",
+            "社内ベンチマーク（4種の平均）で GPT 6.1 Solの98%の性能を40%のコスト など",
+            "Copilotでの価格（100万トークンあたり）: 入力$0.50／出力$2.50（プロモーション価格 など",
+            "MAI Code 2 Flash: コード解説・局所的な編集・ルーチン修正向け。入力$0.05／出力$0.25（その後…"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "日常的な企業向けコーディングが想定で、長時間のエージェント作業にはまだ最適化されていないとされる"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Vercel Labs、AIエージェントがUIを組み立てる「UI SDK」をベータ公開",
+      "points": [],
+      "published": "2026年11月13日",
+      "source": "MarkTechPost、AlphaSignal",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Vercel Labsが、コーディングエージェントが検証済みのUI動作を組み合わせてアクセシブルなコンポーネントを作るためのOSSライブラリ「UI SDK」をパブリックベータで公開しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "完成済みコンポーネントではなく、50以上の「振る舞い（behavior）」を提供するヘッドレスライブラリ",
+            "例: createRovingFocus（矢印キー移動）、createTypeahead（文字入力ジャンプ） など",
+            "フォーカス管理・キーボード操作・ARIA属性が標準で組み込み済み、スタイルはアプリ側で決定",
+            "対応: React、Vue、Svelte、Solid など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "ライセンスは Apache 2.0。ベータのためAPIは変更の可能性あり"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "mobile",
+      "title": "Flutter、ネイティブコードを直接呼び出す仕組みが安定版に",
+      "points": [],
+      "published": "2026年11月12日",
+      "source": "Flutter公式ブログ",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Flutterチームが、Dartからネイティブコードを直接呼び出すツールの安定版を発表しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "FFIgen（Objective-C向け） と JNIgen（Java/Kotlin向け） が安定版に。ネイティブAP…",
+            "従来のプラットフォームチャネルはシリアライズと非同期の往復が必要で など",
+            "Pigeon v30以降に、内部でFFIgen/JNIgenを使う「ネイティブ相互運用」モードをプレビュー提供。Swi…",
+            "対応は Android・iOS・macOS。Windows/Linuxは従来のプラットフォームチャネルを継続"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "FFIgen/JNIgen単体は低レベルで、メモリ管理とスレッド処理は開発者の責任"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "MAI Code 2: Copilotで使える低価格コーディングモデル。性能・価格比は発表元の数値なので など",
+      "Vercel UI SDK: エージェントが作るUIのアクセシビリティを「振る舞い」部品で底上げするアプローチ（ベータ）",
+      "Flutter: FFIgen/JNIgenが安定版 など"
+    ],
+    "closing": "AIがコードを書く時代に、モデルの価格、UIの部品、ネイティブとの橋渡しと、各レイヤーで開発体験の改善が進んでいます。"
+  },
+  "subTheme": "モバイル・デスクトップ"
+}
