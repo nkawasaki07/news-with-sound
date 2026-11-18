@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月19日（木）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "OpenAIがGPT-6.2 AstraとSolを公開",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "OpenAI Developer Community",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "OpenAIが新モデル GPT-6.2 Astra と GPT-6.2 Sol を公開しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "APIモデルID: gpt-6.2-astra / gpt-6.2-sol",
+            "料金（100万トークンあたり）: Astraは 入力$8・出力$40、Solは 入力$2・出力$10",
+            "Astra: 最難関の仕事向け上位モデル。GPT-6 Astraよりタスクあたりのコストは3分の1未満で など",
+            "Sol: 日常業務と多段階のエージェントワークフロー向け。FrontierCode 2.0では など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "両モデルとも APIでUltrafast対応。ChatGPT WorkとCodexで利用でき など",
+            "高リスクなサイバーセキュリティ支援には、より厳しい安全対策を設定"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Node.jsとnpmをブラウザ内で動かす「OpenVessel」",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "Publickey",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "神戸ソフトが、Node.jsとnpmをブラウザのタブの中で動かす実行環境「OpenVessel」 をオープンソースで公開しました。",
+          "keyFigure": {
+            "value": "1237本すべてに合格",
+            "label": "現行版は Node.js 26 に対応。同社によると など"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "ブラウザ上に インメモリのファイルシステム・プロセス・シグナル・パイプ・シェル など最小限のOS機能を実装し など",
+            "現行版は Node.js 26 に対応。同社によると など",
+            "シェルから npm install が使え、ps や ls などの基本コマンドにも対応",
+            "デモでは Astroの開発サーバーとビルド が動作し、Markdownの編集がサイトに即時反映"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "制限事項や具体的なライセンス名は記事に記載がなく、利用前に公式サイトでの確認を推奨"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "mobile",
+      "title": "ライブラリ作者向け、R8のキープルールを賢く書く方法",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "Android Developers Blog",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Android公式ブログが、ライブラリ提供者向けのR8キープルールの書き方 を解説しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "広いルールを狭く: -keep public class com.example.** { *; } のようなパッケー…",
+            "リフレクションよりコード生成: シリアライズやDI（Hiltなど）はcodegenにするとR8が使い方を把握でき など",
+            "リフレクション・JNIで使う入口だけを残す。広告メディエーションのアダプターには 条件付きキープルール",
+            "ルールは ドキュメントではなくライブラリに同梱。読みやすいスタックトレースのための keepnames は不要（Cra…"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "確認には R8 Configuration Analyzer や Android CLIの analyze コマンド、…",
+            "背景には、Google Playが打ち出した DEXコード最適化の基準 がある"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: GPT-6.2は上位のAstraとコスト重視のSolの2本立て。コーディング用途では Solの費用対効果 …",
+      "Web: OpenVesselは 何もインストールせずにNode.js開発を試せる 環境として など",
+      "📱 モバイル: SDK配布者は キープルールを最小限に し、利用アプリの最適化を妨げない設計を。"
+    ]
+  },
+  "subTheme": "モバイル・デスクトップ"
+}
