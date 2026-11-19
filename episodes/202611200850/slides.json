@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月20日（金）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Alibabaが新フラッグシップモデル「Qwen4-Max」を発表",
+      "points": [],
+      "published": "2026年11月16日",
+      "source": "APIYI、Sam on AI",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Alibabaが新しい大規模言語モデル Qwen4-Max を発表しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "コンテキスト100万トークン、最大出力131K（thinking時は262K）",
+            "テキスト・画像・動画入力にネイティブ対応",
+            "モデルID: qwen4-max、QwenCloudのAPIとToken Planで提供",
+            "料金（100万トークンあたり）: 入力$1.50／出力$4.50、キャッシュ入力$0.075"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "前世代Qwen3.8-Maxよりタスクあたりコストが約62%下がったとしていますが、これはAlibaba自身の発表値です。",
+            "小型のQwen4はオープンウェイトで後日公開予定とされています。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "jQuery 4.1.0と3.8.0が同時リリース、3.xは重大な修正のみに",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "jQuery公式ブログ",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "4.x系初のマイナーリリース jQuery 4.1.0 と、3.x系最後の機能リリース 3.8.0 が公開されました。4.1.0の主な変更"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "jqXHRにresponseURLを追加（リダイレクト後の最終URL）",
+            "formAssociatedなカスタム要素を.serialize()で正しく扱う",
+            "内部の要素検索をquerySelectorAllに統一、uniqueSortをO(N)に改善",
+            "XML文書での.css()対応、セレクターのReDoS修正"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "3.xを使い続けているプロジェクトは、4.xへの移行計画を立てる時期です。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "nginxに複数の脆弱性、HTTP/2の不具合はPoCも公開",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "JPCERT/CC",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "nginxの修正版 1.31.9（mainline）／1.30.7（stable） が公開されました。このほか同日にさらに7件を修正。"
+        },
+        {
+          "layout": "points",
+          "points": [
+            "CVE-2026-123007: HTTP/2フロー制御のメモリ破壊 / 1.9.5〜1.31.8",
+            "CVE-2026-118899: TLS 1.3処理の無限ループ / 1.13.0〜1.31.8",
+            "CVE-2026-113425: メールプロキシのUse-After-Free / 0.5.33〜1.31.8"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "適用後はリロードではなく再起動して修正版が動いていることを確認",
+            "暫定策としてHTTP/2の無効化で影響を回避できるとされる",
+            "NGINX PlusはF5のK000164058を参照"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "PHPが4系統を一斉修正、Criticalは7件",
+      "points": [],
+      "published": "2026年11月19日",
+      "source": "piyolog、ITmedia エンタープライズ",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "PHPが 8.5.13／8.4.28／8.3.37／8.2.36 を公開しました。8.5.13では17件を修正し、うちCritical（CVSS v4 9.2）が7件です。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CVE-2026-115560: セッションのupload progressでのデシリアライズ（回避策: sessio…",
+            "CVE-2026-129481: セッション終了処理のUse-After-Free（10月のCVE-2026-1096…",
+            "CVE-2026-129289: PHP-FPMのリクエスト・スマグリング。nginxのfastcgi_keep_co…",
+            "High: 公式Dockerイメージで既定有効のcatch_workers_outputに起因するCVE-2026-1…"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "多くは既定外の設定が条件ですが、19日時点で悪用は未確認。",
+            "10月にも緊急修正があったばかりで、早めの更新が推奨されます。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Qwen4-Maxが100万トークン・低価格でフラッグシップ競争に参入",
+      "Web: jQuery 4.1登場と同時に3.xが重大修正のみのフェーズへ",
+      "セキュリティ: nginxとPHPが同じ週に重大な修正。nginx＋PHP-FPM構成のサーバーは両方の更新を忘れずに"
+    ],
+    "closing": "週末を迎える前に、運用中のサーバーのバージョンをぜひ確認してください。"
+  },
+  "subTheme": "セキュリティ"
+}
