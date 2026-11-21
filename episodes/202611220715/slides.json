@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月22日（日）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Thinking Machines、ループ型の小型モデル「Inkling 2 Mini」をオープンウェイトで公開",
+      "points": [],
+      "published": "2026年11月20日",
+      "source": "Thinking Machines Lab 公式ニュース",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Thinking Machines LabがInkling 2 Miniを公開し、重みをHugging Face（thinkingmachines/Inkling-2-Mini）で配布しました。",
+          "keyFigure": {
+            "value": "約20GB",
+            "label": "大半の層をNVFP4で学習し など"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "総約264億パラメータのMoE（アクティブ数はページ内で34億／54億と表記が揺れている）",
+            "24層を6層ずつ4ブロックに分け、中央の2ブロックを3回繰り返す「ループ型」で など",
+            "大半の層をNVFP4で学習し、そのままの精度で配布。メモリは約20GB、32GB以上のMacならOllamaで動作",
+            "vLLM・SGLang・Ollama・Unsloth（GGUF）・llama.cppなどに対応 など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "DeepSWE v1.1で48.2%など「100B未満のオープンモデルで首位」としていますが、ベンチは自社測定です。",
+            "多数の制約を含む指示やマルチターン対話は弱いと発表元自身が明記しています。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Chrome 158安定版、<install>要素とメディア用の新しい疑似クラス",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "Chrome Platform Status、Frontend Focus",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Chrome 158が安定版になりました。主な変更点:"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "<install>要素とnavigator.install()（Web Install API）で など",
+            "音声・動画向けの疑似クラス :playing・:paused・:buffering・:muted などが使えるようにな…",
+            "::highlight(*)（詳細度ゼロのカスタムハイライト全体指定） など",
+            "プログラムからのフォーカス移動を制限する focus-without-user-activation 権限ポリシー"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "WebTransportにdrainingやreliabilityを追加 など"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "language",
+      "title": "PHP 8.6が正式リリース、部分適用（Partial Function Application）を導入",
+      "points": [],
+      "published": "2026年11月19日",
+      "source": "php.net、Linuxiac",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "本日のプログラミング言語コーナーです。PHP 8.6.0がリリースされました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "部分適用: version_compare(?, '8.6', '>=')のように など",
+            "\\Time\\Durationクラス: 日付やタイムゾーンに依存しない時間の長さをナノ秒精度で扱う",
+            "ポーリングAPI（Io\\Poll）: epoll・kqueueなどを使い など",
+            "clamp()関数、SortDirection enum、readonlyプロパティの既定値も追加"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "挙動変更に注意: session.use_strict_modeとsession.cookie_httponlyが既定で有効 など",
+            "trim()がフォームフィードも削除し、範囲外の値でValueErrorを投げる関数が増えました。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Inkling 2 Miniは、層を繰り返すことで小さなメモリで大きなモデル並みの計算をする設計。ローカル…",
+      "Web: Chrome 158は<install>要素とメディア疑似クラスで、JSに頼っていた処理を宣言的に書けるように",
+      "言語: PHP 8.6は部分適用でパイプ演算子と組み合わせやすくなった一方、セッションの既定値変更は移行時に要確認"
+    ]
+  },
+  "subTheme": "プログラミング言語"
+}
