@@ -1,0 +1,117 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月21日（土）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Google、中位モデル「Gemini 4 Neon」を公開",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "Google Blog、9to5Google",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "GoogleがGemini 4シリーズの新モデル「Gemini 4 Neon」を発表。高速なHydrogenと最上位のCarbonの間に位置し、推論の深さと効率のバランスを狙ったモデルです。",
+          "keyFigure": {
+            "value": "100万トークン",
+            "label": "コンテキスト: 100万トークン"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "コンテキスト: 100万トークン",
+            "料金（100万トークンあたり）: 入力$3・出力$15、キャッシュ入力は$0.15（95%引き）",
+            "思考レベル: low / medium / high / xhighの4段階（既定はhigh）",
+            "提供: Gemini API有料枠・Google AI Studio など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "Artificial Analysis Coding Agent Indexで1位などのベンチマーク結果は発表元の数値です。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Cloudflare、AIエージェント向けブラウザ「Kitesurf」をオープンソース化",
+      "points": [],
+      "published": "2026年11月16日",
+      "source": "Publickey、gihyo.jp",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "8月に発表されたエージェント専用ヘッドレスブラウザKitesurfがApache 2.0でOSS化されました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "Chromiumベースではなく、Rust製をWebAssembly化してCloudflare Workers上で動作",
+            "構成部品: Blitz（HTML/DOM/レイアウト）、Stylo（CSS）、Boa（JavaScript） など",
+            "Chrome DevTools Protocol（CDP）対応でPuppeteer系クライアントから接続可能",
+            "タブ・テーマ・拡張機能などは省略し、プロンプトインジェクション対策を重視"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "Chromium比CPU・メモリ効率3〜7倍はCloudflareの主張で、現時点では実験段階。",
+            "デプロイ時は既定で認証がないため、Cloudflare Access等での保護が推奨されています。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "infra",
+      "title": "Linuxアプリを無改造でマイクロVM化する「Hyperlight-Unikraft」",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "Publickey、CNCF Blog",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "軽量VM管理ライブラリHyperlightと、必要なOS機能だけを持つユニカーネルを作るUnikraftを組み合わせ、既存のLinuxアプリを再コンパイルなしでハイパーバイザー隔離のマイクロVMとし…",
+          "keyFigure": {
+            "value": "3GBで約1,000本",
+            "label": "Pythonスクリプトの起動が199ms → 8.9ms、…"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "ウォームアップ済み状態をスナップショットとして焼き込み、起動を高速化",
+            "Pythonスクリプトの起動が199ms → 8.9ms、3GBで約1,000本を同時実行（CNCF発表値）",
+            "対応ランタイム: Python、Node.js、.NET、Java、PHP、Go、Rust、C、Bash など",
+            "ホスト: Linux（KVM/MSHV）、Windows（Windows Hypervisor Platform） など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "CLI hluk でアプリをマイクロVMとしてビルド"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "Gemini 4 Neon: 100万トークン・入力$3/出力$15の中位モデル、4段階の思考レベル",
+      "Kitesurf: Rust＋WebAssembly製、CDP対応のエージェント向けブラウザがOSS化",
+      "Hyperlight-Unikraft: Linuxアプリを無改造でミリ秒起動のマイクロVMに"
+    ],
+    "closing": "AIエージェントを安全かつ軽量に動かす実行基盤が、ブラウザと仮想化の両面で整いつつあります。"
+  },
+  "subTheme": "インフラ・DevOps"
+}

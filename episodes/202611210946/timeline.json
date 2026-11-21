@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "duration": 207.029,
+  "segments": [
+    {
+      "start": 0,
+      "duration": 6.933,
+      "kind": "intro",
+      "topic": null,
+      "text": "AIとWebの最前線　デイリーニュースキャスト\n2026年11月21日（土曜日）"
+    },
+    {
+      "start": 6.933,
+      "duration": 11.403,
+      "kind": "intro",
+      "topic": null,
+      "text": "おはようございます。AIとWebの最前線、デイリーニュースキャストのお時間です。\n本日は3個のトピックをお届けします。それでは早速、見ていきましょう。"
+    },
+    {
+      "start": 18.336,
+      "duration": 7.264,
+      "kind": "topic",
+      "topic": 1,
+      "text": "トピック1　Google、中位モデル「Gemini 4 Neon」を公開"
+    },
+    {
+      "start": 25.6,
+      "duration": 46.656,
+      "kind": "topic",
+      "topic": 1,
+      "text": "Googleは11月18日、Gemini 4シリーズの新モデル、Gemini 4 Neonを発表しました。高速なHydrogenと最上位のCarbonの間に位置づけられ、深い推論と効率のバランスを狙ったモデルです。コンテキストウィンドウは100万トークン、料金は100万トークンあたり入力3ドル、出力15ドルで、キャッシュ済み入力は95パーセント引きの0.15ドルです。思考レベルはlow、medium、high、xhighの4段階で、既定はhighです。Gemini APIの有料枠やGoogle AI Studio、Antigravityで使え、Googleはコーディングエージェント系の指標で1位と主張していますが、これは発表元の数値です。"
+    },
+    {
+      "start": 72.256,
+      "duration": 6.869,
+      "kind": "topic",
+      "topic": 2,
+      "text": "トピック2　Cloudflare、AIエージェント向けブラウザ「Kitesurf」をオープンソース化"
+    },
+    {
+      "start": 79.125,
+      "duration": 43.883,
+      "kind": "topic",
+      "topic": 2,
+      "text": "Cloudflareは、8月に発表したエージェント専用のヘッドレスブラウザ、Kitesurfをオープンソースとして公開しました。ヘッドレスブラウザとは、画面を表示せずにプログラムから操作するブラウザのことです。ChromiumではなくRust製で、Blitz、Stylo、Boaといった部品を組み合わせ、WebAssemblyにしてCloudflare Workers上で動きます。Chrome DevTools Protocolに対応しているので、Puppeteerのようなクライアントから接続できます。タブや拡張機能は省き、Chromium比で3倍から7倍効率的とされていますが、これはCloudflareの主張で、まだ実験段階です。ライセンスはApache 2.0です。"
+    },
+    {
+      "start": 123.008,
+      "duration": 6.752,
+      "kind": "topic",
+      "topic": 3,
+      "text": "トピック3　Linuxアプリを無改造でマイクロVM化する「Hyperlight-Unikraft」"
+    },
+    {
+      "start": 129.76,
+      "duration": 46.677,
+      "kind": "topic",
+      "topic": 3,
+      "text": "今日のインフラ・DevOpsコーナーです。CNCFが、Hyperlight-Unikraftを発表しました。Hyperlightは軽量な仮想マシン管理ライブラリ、Unikraftはアプリに必要なOS機能だけを持つユニカーネルを作るツールキットで、両者を組み合わせると、既存のLinuxアプリを再コンパイルせずにハイパーバイザーで隔離されたマイクロVMとして動かせます。ウォームアップ済みの状態をスナップショットとして焼き込むことで、通常199ミリ秒かかるPythonスクリプトの起動が8.9ミリ秒になったとされています。Python、Node.js、Java、Goなど幅広く対応し、LinuxのKVMやWindows、Apple シリコンのMacでも動きます。"
+    },
+    {
+      "start": 176.437,
+      "duration": 30.592,
+      "kind": "summary",
+      "topic": null,
+      "text": "本日は、Googleの中位モデルGemini 4 Neon、CloudflareのAIエージェント向けブラウザKitesurfのオープンソース化、そしてマイクロVMで高速起動を実現するHyperlight-Unikraftの3本をお届けしました。AIエージェントを安全かつ軽量に動かすための実行基盤が、ブラウザでも仮想化でも整ってきていますね。それでは、良い週末をお過ごしください。AIとWebの最前線、デイリーニュースキャストでした。"
+    }
+  ]
+}
