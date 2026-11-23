@@ -1,0 +1,155 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月23日（月）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "テンセントが低価格マルチモーダルモデル「Hy4 Flash」を公開",
+      "points": [],
+      "published": "2026年11月16日",
+      "source": "Unite.AI、OmniaKey",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "文脈長約100万トークン、最大出力約6.4万トークン、テキスト＋画像入力",
+          "keyFigure": {
+            "value": "文脈長約100万トークン",
+            "label": "文脈長約100万トークン、最大出力約6.4万トークン など"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "文脈長約100万トークン、最大出力約6.4万トークン、テキスト＋画像入力",
+            "総パラメータ約2,200億（発表時は2,240億と表記）、アクティブ120億のMoE",
+            "APIは OpenAI Chat Completions／Responses など",
+            "上位のHy4より大幅に安いとされるが、料金の通貨・金額は報道間で食い違いあり"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "オープンウェイトは「予定」とする報道と「Hugging Faceで公開済み（独自ライセンス）」とする報道があり、未確認",
+            "性能（WorkIndex等）はテンセント自社評価"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Solid 2.0が正式リリース",
+      "points": [],
+      "published": "2026年11月17日",
+      "source": "Solid GitHub Releases、AlternativeTo",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "3月ベータ → 8月RC → 23回のRCを経て安定版"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "3月ベータ → 8月RC → 23回のRCを経て安定版",
+            "最大の変化は 非同期処理をリアクティブグラフに統合。計算がPromiseや非同期イテレーターを返せ など",
+            "サーバー関数がコアに（RPC形式、SSEによる持続接続）",
+            "削除されたAPI: createResource、batch、startTransition、on、produce など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "SolidStartは役目を終了し、コアとフレームワーク非依存のViteプラグインで代替",
+            "開発ビルドで安定したエラーコード・ウォーターフォール検出、Chrome Performance Tracks連携"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "security",
+      "title": "Javaの脆弱性「Java4Shell」（CVE-2026-114938）",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "The Hacker News",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "AVX-512 VBMIを使う高速版Base64デコーダーで など"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "AVX-512 VBMIを使う高速版Base64デコーダーで など",
+            "Basic認証ヘッダーやSAML、CSRFトークン経由で認証不要で到達しうる",
+            "影響: Java 17.0.6以降、21、25、27（GraalVM一部含む）。x86-64のIce Lake以降・Z…",
+            "修正版: Oracle 17.0.21.1／21.0.13.1／25.0.5.1／27.0.1.1 など"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "CVSSはOracle 8.1、発見者（Calif）9.2、Red Hat暫定9.8",
+            "発見者はJira・Jenkins・Keycloak等でのRCEを主張するが など",
+            "対処: 更新 → Javaサービス再起動・コンテナ再ビルド。暫定策は -XX:-UseBASE64Intrinsics…"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "security",
+      "title": "CISAがvCenter・Apache Rollerなど4件をKEVに追加",
+      "points": [],
+      "published": "2026年11月21日",
+      "source": "The Hacker News",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "CISAが11/20、実悪用を理由に4件を追加",
+          "keyFigure": {
+            "value": "実悪用を理由に4件を追加",
+            "label": "CISAが11/20、実悪用を理由に4件を追加"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "CISAが11/20、実悪用を理由に4件を追加",
+            "VMware vCenter 認証回避 CVE-2026-123890（CVSS 9.8）: 中国系とみられるグループ…",
+            "Apache Roller CVE-2026-129448（CVSS 9.8）: XML-RPCエンドポイントのデシリ…",
+            "Cisco Expressway CVE-2026-76466（CVSS 9.8）: ハードコード認証情報でroot権…"
+          ]
+        },
+        {
+          "layout": "points",
+          "heading": "ほかの変更点",
+          "points": [
+            "SAP NetWeaver Enterprise Portal CVE-2025-42884（CVSS 6.5）",
+            "該当製品は最優先でパッチ適用を"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "テンセントが低価格マルチモーダルモデル「Hy4 Flash」を公開",
+      "Solid 2.0が正式リリース",
+      "Javaの脆弱性「Java4Shell」（CVE-2026-114938）",
+      "CISAがvCenter・Apache Rollerなど4件をKEVに追加"
+    ],
+    "closing": "セキュリティでは、Java4ShellがCPUの命令セットに依存するという珍しい性質を持つため、まず自社サーバーのCPUとJDKバージョンの棚卸しから始めるのが合理的です。"
+  },
+  "subTheme": "セキュリティ"
+}
