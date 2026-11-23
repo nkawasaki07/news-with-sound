@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月24日（火）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Z.aiが初のループ型トランスフォーマー「GLM-5.4」を公開",
+      "points": [],
+      "published": "2026年11月23日",
+      "source": "DataCamp、i10x News",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "ループトランスフォーマーを採用し、GLM-5ベースの28層を重み共有のまま2回通す設計（パラメータを増やさず推論の深さ…",
+          "keyFigure": {
+            "value": "100万トークン",
+            "label": "100万トークンのコンテキスト、今回から画像入力に対応"
+          }
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "ループトランスフォーマーを採用し、GLM-5ベースの28層を重み共有のまま2回通す設計（パラメータを増やさず推論の深さ…",
+            "総パラメータは約750Bとされるが、Z.aiは未確認",
+            "100万トークンのコンテキスト、今回から画像入力に対応",
+            "GLM Coding Plan・ZCode・Z.ai Chatで提供中、週次クォータはGLM-5.3比50%増"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "性能評価は続報待ちです。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "Nuxt UI 4.13でトグルやチャット添付などのコンポーネントを追加",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "Nuxt Changelog",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "新コンポーネント Toggle / ToggleGroup（type=\"multiple\" で複数選択）"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "新コンポーネント Toggle / ToggleGroup（type=\"multiple\" で複数選択）",
+            "ChatPrompt が v-model:files によるファイル添付に対応 など",
+            "ストリーミング中のメッセージを溜める v-model:queue",
+            "useToast に promise メソッドを追加し、非同期処理の進行・成功・失敗を一括表示"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "直前の 4.12.1 / 4.12.2 では重大なXSS修正が入っているため、旧版利用者は合わせて更新を。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "infra",
+      "title": "AWS CDK 2.278.0、L1コンストラクトの生成元が変わり破壊的変更も",
+      "points": [],
+      "published": "2026年11月20日",
+      "source": "AWS CDK GitHub Releases",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "L1コンストラクトが公開のCloudFormation Resource Schemasから自動生成されると明記"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "L1コンストラクトが公開のCloudFormation Resource Schemasから自動生成されると明記",
+            "破壊的変更: Bedrock AgentCore（PaymentManager関連）の型名変更 など",
+            "新機能: Lambda Managed Instancesの AcceleratorConfig など",
+            "依存の minimatch を 11.0.8 に更新（脆弱性対応）"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "更新前に cdk diff で差分確認を。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "category": "infra",
+      "title": "CloudWatch Container InsightsがEKS上のKarpenterやvLLMを標準で監視",
+      "points": [],
+      "source": "AWS What's New、Dev Digest／daily-aws経由",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "組み込み監視の対象: Karpenter、KEDA、vLLM、SGLang、KServe、Ray など"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "組み込み監視の対象: Karpenter、KEDA、vLLM、SGLang、KServe、Ray など",
+            "ServiceMonitor / PodMonitor によるPrometheus形式の独自メトリクス取り込みとテレメ…",
+            "要件: CloudWatch Observability EKSアドオン（またはHelmチャート）8.0.0以降"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "GPU推論基盤をEKSで運用するチームはダッシュボード自作の手間が減りそうです。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "GLM-5.4: ループ構造の新フラッグシップ。ただしAPI・重み・公式ベンチは未公開",
+      "Nuxt UI 4.13: Toggle系とAIチャット向け機能を強化",
+      "AWS CDK 2.278.0: L1生成元の変更と破壊的変更に注意",
+      "Container Insights for EKS: Karpenter・vLLMなどを標準で可視化"
+    ],
+    "closing": "新モデルの数字は自社発表が中心です。実際に試して確かめていきましょう。"
+  },
+  "subTheme": "インフラ・DevOps"
+}

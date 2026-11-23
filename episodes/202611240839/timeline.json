@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "duration": 311.499,
+  "segments": [
+    {
+      "start": 0,
+      "duration": 6.795,
+      "kind": "intro",
+      "topic": null,
+      "text": "AIとWebの最前線　デイリーニュースキャスト\n2026年11月24日（火曜日）"
+    },
+    {
+      "start": 6.795,
+      "duration": 11.435,
+      "kind": "intro",
+      "topic": null,
+      "text": "おはようございます。AIとWebの最前線、デイリーニュースキャストのお時間です。\n本日は4個のトピックをお届けします。それでは早速、見ていきましょう。"
+    },
+    {
+      "start": 18.229,
+      "duration": 7.787,
+      "kind": "topic",
+      "topic": 1,
+      "text": "トピック1　Z.aiが初のループ型トランスフォーマー「GLM-5.4」を公開"
+    },
+    {
+      "start": 26.016,
+      "duration": 59.168,
+      "kind": "topic",
+      "topic": 1,
+      "text": "中国のZ.aiが11月23日、新しいフラッグシップモデル、GLM-5.4を発表しました。最大の特徴は、ループトランスフォーマーという設計です。これは同じ層のかたまりを2回くり返して通すことで、パラメータを増やさずに考える深さを稼ぐ仕組みで、GLM-5ベースの28層を重みを共有したまま2周させています。総パラメータは約7500億とされますが、公式には確認されていません。コンテキストは100万トークンで、今回から画像入力にも対応しました。現在はGLM Coding Plan、ZCode、Z.ai Chatで使え、週次クォータはGLM-5.3より5割増えています。一方、APIとオープンウェイトは安全性評価のあとに公開予定で、公式ベンチマークもまだ出ていません。性能の評価は、続報を待つのが賢明です。"
+    },
+    {
+      "start": 85.184,
+      "duration": 6.272,
+      "kind": "topic",
+      "topic": 2,
+      "text": "トピック2　Nuxt UI 4.13でトグルやチャット添付などのコンポーネントを追加"
+    },
+    {
+      "start": 91.456,
+      "duration": 55.627,
+      "kind": "topic",
+      "topic": 2,
+      "text": "Vue向けフレームワークNuxtのUIライブラリ、Nuxt UIのバージョン4.13が11月18日に公開されました。新たにToggleとToggleGroupコンポーネントが加わり、複数選択のボタン群もかんたんに作れます。AIチャット画面向けには、ChatPromptでファイル添付を扱えるようになり、添付を表示するChatAttachmentや、応答のストリーミング中に次のメッセージをためておくキュー機能も入りました。さらに、トースト通知を出すuseToastにpromiseメソッドが追加され、非同期処理の進行中、成功、失敗を一つの呼び出しで表示できます。Tailwindのクラス名をテーマと照合するESLint設定も同梱されました。なお、直前の4.12.1と4.12.2では重大なXSS修正が入っているので、古い版を使っている方は合わせて更新しておきましょう。"
+    },
+    {
+      "start": 147.083,
+      "duration": 9.408,
+      "kind": "topic",
+      "topic": 3,
+      "text": "トピック3　AWS CDK 2.278.0、L1コンストラクトの生成元が変わり破壊的変更も"
+    },
+    {
+      "start": 156.491,
+      "duration": 59.84,
+      "kind": "topic",
+      "topic": 3,
+      "text": "今日のインフラ・DevOpsコーナーです。インフラをコードで書くツール、AWS CDKのバージョン2.278.0が11月20日に公開されました。L1コンストラクト、つまりCloudFormationのリソースを1対1で表す低レベルの部品が、公開されているCloudFormationのリソーススキーマから自動生成されるようになったと明記されています。その影響で、Bedrock AgentCoreの一部の型名の変更や、Service Catalogの属性削除といった破壊的変更が含まれます。機能面では、Lambda Managed InstancesのAcceleratorConfig、IPAMによるサブネットのCIDR割り当て、ロードバランサーのリスナー条件での正規表現、CNSA 1.0準拠のSSLポリシーなどが加わりました。依存ライブラリのminimatchも脆弱性対応版に更新されています。アップデート前に、cdk diffで差分を確かめるのがおすすめです。"
+    },
+    {
+      "start": 216.331,
+      "duration": 6.891,
+      "kind": "topic",
+      "topic": 4,
+      "text": "トピック4　CloudWatch Container InsightsがEKS上のKarpenterやvLLMを標準で監視"
+    },
+    {
+      "start": 223.221,
+      "duration": 54.176,
+      "kind": "topic",
+      "topic": 4,
+      "text": "インフラ・DevOpsコーナー、もう一本です。11月20日から21日にかけて、AWSはAmazon CloudWatchのContainer Insights for EKSに、よく使われるクラスター部品の組み込み監視を追加しました。対象は、ノードを自動で増減するKarpenter、イベント駆動でスケールするKEDA、LLM推論サーバーのvLLMやSGLang、KServe、Ray、Knative Servingです。あわせて、Prometheus形式の独自メトリクスを集めるServiceMonitorやPodMonitorの取り込みと、テレメトリのフィルタリングにも対応しました。利用にはCloudWatch ObservabilityのEKSアドオン、またはHelmチャートの8.0.0以降が必要です。GPU推論基盤をEKSで運用しているチームには、ダッシュボードを自作する手間が減りそうです。"
+    },
+    {
+      "start": 277.397,
+      "duration": 34.101,
+      "kind": "summary",
+      "topic": null,
+      "text": "本日は、ループ構造で深く考えるGLM-5.4、AIチャット画面づくりがはかどるNuxt UI 4.13、破壊的変更を含むAWS CDK 2.278.0、そしてEKSの監視を手軽にするContainer Insightsの拡張をお届けしました。新しいモデルは自社発表の数字が中心なので、実際に試して確かめる姿勢を大切にしたいですね。\nそれでは、今日も良い一日を。AIとWebの最前線、デイリーニュースキャストでした。"
+    }
+  ]
+}
