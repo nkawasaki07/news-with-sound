@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "generatedFrom": "markdown",
+  "title": "AIとWebの最前線 デイリーニュースキャスト",
+  "dateLabel": "2026年11月25日（水）",
+  "topics": [
+    {
+      "number": 1,
+      "category": "ai",
+      "title": "Anthropic、プルリクエスト支援の「Claude Ship」をベータ公開",
+      "points": [],
+      "published": "2026年11月24日",
+      "source": "gihyo.jp",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Anthropicが11月23日、GitHubのプルリクエスト（PR）作業を支援する Claude Ship をベータ公開しました。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "Code Review（一般提供済み）: PRの問題点をコメント",
+            "PR Steward（ベータ）: レビュー指摘・CIの失敗・マージ衝突を自動修正。プッシュごとに変更内容と戻し方のメモ…",
+            "Claude Approvals（ベータ）: リポジトリの承認ポリシーを読み など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "対象はTeam／Enterpriseプランで、Code ReviewとPR Stewardはトークン使用量に応じた課金（組織ごとに月額上限…",
+            "ゼロデータ保持などの設定の組織では利用不可です。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "category": "web",
+      "title": "State of HTML 2026の結果が公開",
+      "points": [],
+      "published": "2026年11月18日",
+      "source": "Frontend Focus #767",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "HTMLの利用実態を調べる開発者調査 State of HTML 2026 の結果が公開されました（調査期間10/1〜11/1、回答者約2,100人）。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "利用率トップは details/summary（72.5%）、次いで dialog（67.8%）",
+            "Popover APIの利用率が40%に到達",
+            "selectと日付入力のスタイリングが依然として最大の悩み。カスタマイズ可能なselectはFirefox未対応が足かせ",
+            "datalistの利用は30%→44%に増えた一方、好意的評価は44%→34%に低下"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "総括では、不満の矛先が仕様からブラウザ（特にモバイルOS）の対応遅れへ移りつつあると指摘されています。",
+            "※数値はニュースレターの要約に基づきます。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "category": "language",
+      "title": "PowerShell 7が次期Windowsに標準搭載へ",
+      "points": [],
+      "published": "2026年11月19日",
+      "source": "gihyo.jp、Microsoftの発表は11月17日",
+      "pages": [
+        {
+          "layout": "overview",
+          "lead": "Microsoftが、PowerShell 7を次期Windowsに標準搭載すると発表しました。同日、Windows PowerShell 5.1は非推奨に。"
+        },
+        {
+          "layout": "points",
+          "heading": "主なポイント",
+          "points": [
+            "次期Windowsでは5.1がオンデマンド機能（FoD）扱いに。ただし新規インストールでは既定で有効 など",
+            "将来の削除時期は未定（事前告知予定）。Windows 11 26H2など既存版では7は引き続き別途インストール",
+            "起動名は 5.1がpowershell.exe、7がpwsh.exe。powershell.exeを呼ぶタスクは7搭載…",
+            "MSIX版pwsh.exeはSYSTEM権限のタスクから起動できない など"
+          ]
+        },
+        {
+          "layout": "action",
+          "items": [
+            "推奨アクション: 5.1を呼んでいるタスク・サービスを洗い出し、スクリプトをPowerShell 7でテスト、新規の自動化は7で書くこと。"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "points": [
+      "生成AI: Claude Shipで、AIがPRの修正から承認まで担う段階に。承認ポリシー設計がこれまで以上に重要にな…",
+      "Web: State of HTML 2026では、モダンなHTML要素の普及とブラウザ対応の遅れへの不満が浮き彫りに",
+      "プログラミング言語: PowerShell 7への世代交代が本格化。powershell.exe依存のスクリプトは早め…"
+    ]
+  },
+  "subTheme": "プログラミング言語"
+}

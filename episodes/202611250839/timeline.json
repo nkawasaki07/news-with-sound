@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "duration": 222.389,
+  "segments": [
+    {
+      "start": 0,
+      "duration": 6.933,
+      "kind": "intro",
+      "topic": null,
+      "text": "AIとWebの最前線　デイリーニュースキャスト\n2026年11月25日（水曜日）"
+    },
+    {
+      "start": 6.933,
+      "duration": 11.403,
+      "kind": "intro",
+      "topic": null,
+      "text": "おはようございます。AIとWebの最前線、デイリーニュースキャストのお時間です。\n本日は3個のトピックをお届けします。それでは早速、見ていきましょう。"
+    },
+    {
+      "start": 18.336,
+      "duration": 6.635,
+      "kind": "topic",
+      "topic": 1,
+      "text": "トピック1　Anthropic、プルリクエスト支援の「Claude Ship」をベータ公開"
+    },
+    {
+      "start": 24.971,
+      "duration": 53.835,
+      "kind": "topic",
+      "topic": 1,
+      "text": "Anthropicが11月23日、GitHubのプルリクエスト作業を支援する「Claude Ship」をベータ公開しました。中身は3つの機能です。すでに一般提供中のコードレビューに加えて、レビュー指摘やCIの失敗、マージの衝突を自動で直しにいく「PR Steward」、そしてリポジトリごとの承認ポリシーを読んで、条件を満たす変更ならClaudeが承認まで行える「Claude Approvals」が加わりました。CIとは、コードを変更するたびに自動でテストやビルドを回す仕組みのことです。対象はTeamとEnterpriseプランで、トークン使用量に応じた課金があり、組織ごとに月額の上限を設定できます。また、Claude Codeには手元の変更をコミットしてプルリクエストまで作る「スラッシュship」コマンドも順次展開されています。"
+    },
+    {
+      "start": 78.805,
+      "duration": 5.312,
+      "kind": "topic",
+      "topic": 2,
+      "text": "トピック2　State of HTML 2026の結果が公開"
+    },
+    {
+      "start": 84.117,
+      "duration": 51.691,
+      "kind": "topic",
+      "topic": 2,
+      "text": "HTMLの利用実態を調べる開発者調査「State of HTML 2026」の結果が公開され、11月18日のFrontend Focusで紹介されました。回答者は約2,100人です。よく使われている機能のトップはdetailsとsummary要素で約72パーセント、続いてdialog要素が約68パーセントでした。ポップオーバーAPI、つまりJavaScriptなしでポップアップを出せる仕組みの利用率も40パーセントに達しています。一方で、select要素や日付入力のスタイル調整は依然として最大の悩みどころで、欲しい機能の1位は、並べ替えや絞り込みができるネイティブのデータテーブルでした。不満の中心が仕様そのものから、ブラウザの対応の遅れへと移りつつある、というのが今回の総括です。"
+    },
+    {
+      "start": 135.808,
+      "duration": 4.821,
+      "kind": "topic",
+      "topic": 3,
+      "text": "トピック3　PowerShell 7が次期Windowsに標準搭載へ"
+    },
+    {
+      "start": 140.629,
+      "duration": 51.211,
+      "kind": "topic",
+      "topic": 3,
+      "text": "今日のプログラミング言語コーナーです。Microsoftは、スクリプト言語でありシェルでもあるPowerShellの最新系統、PowerShell 7を次期Windowsに標準搭載すると発表しました。gihyo.jpが11月19日に報じています。同時に、従来のWindows PowerShell 5.1は非推奨となり、次期Windowsでは「オンデマンド機能」、つまり後から有効化や削除ができる追加機能扱いになります。ただし新規インストールでは既定で有効で、セキュリティ更新も続きます。注意点は、5.1はpowershell.exe、7はpwsh.exeと起動名が違うことで、powershell.exeを呼ぶタスクは引き続き5.1で動きます。今のうちに既存スクリプトを7でテストしておくのがおすすめです。"
+    },
+    {
+      "start": 191.84,
+      "duration": 30.549,
+      "kind": "summary",
+      "topic": null,
+      "text": "本日は、プルリクエストの修正から承認までをAIが担うClaude Ship、HTMLの今を映すState of HTML 2026、そしてPowerShell 7の標準搭載という3つの話題をお届けしました。AIが開発フローの深い部分まで入り込む一方で、足元のWeb標準や実行環境も着実に世代交代が進んでいます。それでは今日も良い一日を。AIとWebの最前線、デイリーニュースキャストでした。"
+    }
+  ]
+}
