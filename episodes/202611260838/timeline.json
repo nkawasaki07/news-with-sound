@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "duration": 203.925,
+  "segments": [
+    {
+      "start": 0,
+      "duration": 7.061,
+      "kind": "intro",
+      "topic": null,
+      "text": "AIとWebの最前線　デイリーニュースキャスト\n2026年11月26日（木曜日）"
+    },
+    {
+      "start": 7.061,
+      "duration": 11.403,
+      "kind": "intro",
+      "topic": null,
+      "text": "おはようございます。AIとWebの最前線、デイリーニュースキャストのお時間です。\n本日は3個のトピックをお届けします。それでは早速、見ていきましょう。"
+    },
+    {
+      "start": 18.464,
+      "duration": 8.597,
+      "kind": "topic",
+      "topic": 1,
+      "text": "トピック1　Baidu、ERNIE 5.5 Flash Previewの重みをApache 2.0で公開"
+    },
+    {
+      "start": 27.061,
+      "duration": 49.952,
+      "kind": "topic",
+      "topic": 1,
+      "text": "中国のBaiduが、11月11日に発表したERNIE 5.5 Flash Previewのモデルの重みを、11月23日にHugging Faceで公開しました。総パラメータ2800億、そのうち一度に動くのは140億という、専門家を切り替えて使うMoE構成で、扱える文脈は約100万トークンです。ライセンスは商用利用もしやすいApache 2.0で、地域制限などがあったベース版とは条件が異なります。推論サーバーのSGLangやvLLMでの動かし方も示されていますが、最小構成でも80ギガバイトのGPUが4枚ほど必要な規模です。ベンチマークの数値はBaidu自身による測定で、本人たちも開発途中のチェックポイントだと明記しています。"
+    },
+    {
+      "start": 77.013,
+      "duration": 7.883,
+      "kind": "topic",
+      "topic": 2,
+      "text": "トピック2　webpack 5.113、HTMLのstyleタグでCSS Modulesが使えるように"
+    },
+    {
+      "start": 84.896,
+      "duration": 42.837,
+      "kind": "topic",
+      "topic": 2,
+      "text": "11月19日にwebpack 5.113がリリースされました。目玉は、エントリーにしたHTMLファイルの中で、styleタグにmodule属性を付けるとCSS Modulesとして扱われる機能です。CSS Modulesとは、クラス名を自動で一意な名前に変えて、ほかのスタイルとの衝突を防ぐ仕組みのことです。マークアップのclass属性もwebpackが書き換えてくれますが、JavaScriptの中のセレクター文字列は書き換えないため、JS用にはdata属性を使うよう案内されています。ほかにもSVGの最適化オプション、CommonJSのツリーシェイキング改善、ホットリロードの不具合修正などが入っています。"
+    },
+    {
+      "start": 127.733,
+      "duration": 6.443,
+      "kind": "topic",
+      "topic": 3,
+      "text": "トピック3　Androidのデベロッパー認証、2027年1月から全世界へ拡大"
+    },
+    {
+      "start": 134.176,
+      "duration": 43.264,
+      "kind": "topic",
+      "topic": 3,
+      "text": "今日のモバイル・デスクトップコーナーです。Googleは11月19日、Androidアプリの開発者認証を2027年1月から全世界に広げると発表しました。9月末からブラジル、インドネシア、シンガポール、タイで先行していましたが、まずGoogle PlayやGalaxy Storeなど7つの配信元から始め、数か月かけて全ての国と、認定端末上の全てのインストール経路に広がります。少数の端末に限って配る限定配布アカウントは、登録できる端末が20台から50台に増えました。Play以外で配布している開発者は、Android Developer Consoleのアカウント作成が必要です。"
+    },
+    {
+      "start": 177.44,
+      "duration": 26.485,
+      "kind": "summary",
+      "topic": null,
+      "text": "本日は、Baiduの大規模オープンウェイトモデル、webpackのHTML内CSS Modules対応、そしてAndroid開発者認証の世界展開についてお伝えしました。特にPlayストア以外でアプリを配っている方は、来年1月に向けて早めの登録確認をおすすめします。\n以上、AIとWebの最前線、デイリーニュースキャストでした。今日も良い一日をお過ごしください。"
+    }
+  ]
+}
